@@ -48,6 +48,6 @@ exports.cleanAddress = function (address, result) {
   if (findProvince) {
     address = address.replace(findProvince[0], '')
   }
-  address = address.trim()
+  address = address.toString().trim()
   return address
 }
